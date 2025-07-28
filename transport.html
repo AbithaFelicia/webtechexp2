@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Transport Registration</title>
+  <style>
+    body {
+      background-color: #ffe6f0; /* light pink */
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cc0066;
+    }
+
+    form {
+      background-color: #fff0f5;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #660033;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #cc0066;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #a60052;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>College Transport Registration</h1>
+
+  <form>
+    <label>Full Name:</label>
+    <input type="text" name="fullname" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+
+    <label>Registration Number:</label>
+    <input type="text" name="regno" required>
+
+    <label>Choose your route:</label>
+    <select name="route" required>
+      <option value="">--Select--</option>
+      <option value="Route A - Bus Stand">Route A - Bus Stand</option>
+      <option value="Route B - Railway Station">Route B - Railway Station</option>
+      <option value="Route C - Ukkadam">Route C - Ukkadam</option>
+    </select>
+
+    <label>Preferred Shift:</label>
+    <input type="radio" name="shift" value="Morning" required> Morning
+    <input type="radio" name="shift" value="Evening"> Evening
+
+    <label>Bus Facilities Required:</label>
+    <input type="checkbox" name="facilities" value="AC"> AC
+    <input type="checkbox" name="facilities" value="WiFi"> Wi-Fi
+    <input type="checkbox" name="facilities" value="Charging Port"> Charging Port
+    <input type="checkbox" name="facilities" value="Recliner"> Recliner Seats
+
+    <label>Distance to college (in km):</label>
+    <input type="number" name="distance" required>
+
+    <label>Any comments:</label>
+    <textarea name="comments" rows="3"></textarea>
+
+    <div class="buttons">
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+</body>
+</html>
